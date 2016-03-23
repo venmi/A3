@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+body{ width:480px; margin:0 auto; background:#fff;}
+
+.chrt{ width:480px; height:696px; position:relative;}
+.chrt img{ width:480px; height:696px; display:block;}
+.appoint{ position:absolute; left:0px; bottom:140px; width:100%; text-align: center;}
+.appoint_btn{ width:226px; height:61px;}
+
+.qieh{ width:480px; height:60px; background:#3e464b;}
+.qieh ul{}
+.qieh ul li{ float:left; width:239px; border-right:1px solid #fff; font-weight:bold; line-height:60px; color:#fff; font-size:18px;}
+.qieh ul li a{ color:#fff; display:block; text-decoration:none;}
+.qieh ul li a img{ width:27px; height:26px; margin: 17px 7px 17px 67px; float:left;}
+/*试乘试驾*/
+.try_drive{ width:100%; height:756px; position:absolute; left:0px; top:0px;}
+.try_drive_bg{ background:#000; opacity:0.6; width:100%; height:100%;}
+.try{ position:absolute; left:0px; top:35px; width:100%;}
+.drive{ width:436px; margin:0 auto; height:645px; background:#fff;}
+.drive_head{ width:100%; height:45px; background:#f00; text-align:center; position:relative;}
+.drive_head h3{ line-height:45px; color:#fff; font-size:23px; font-weight:normal;}
+.cha{ position:absolute; width:100%; top:0px; right:0px;}
+.ca{ width:436px; margin:0 auto; height:45px;}
+.close{ wifth:45px; height:45px; float:right;}
+.close img{ width:30px; height:31px; margin:7px 8px;}
+.aod{ width:100%; margin-top:40px;}
+.aod dl{ width:170px; height:112px; margin-left:40px; float:left;}
+.aod dl dt{ width:170px; height:55px;}
+.aod dl dt img{ width:159px; height:55px; display:block;}
+.aod dl dd{ width:170px;}
+.aod dl dd p{ font-size:16px; line-height:30px; width:100%; color:#666; text-align:center;}
+.aod dl dd span{ margin:0px 72px;}
+
+.try_drive_infor{ width:100%;}
+.try_drive_infor_btn{ width:402px; height:42px; margin:15px 15px 0px; border:1px solid #ededed; background:#fff; border-radius:5px;}
+.try_drive_infor_btn label{ width:105px; height:42px; line-height:42px; color:#444; text-align:right; font-size:19px; float:left;}
+.try_input{ width:280px; height:20px; padding:11px 6px; font-size:18px; background:#fff; border:none;}
+.sex{ width:88px; height:42px; margin-left:36px; font-size:19px; line-height:42px; color:#555; float:left;}
+.sex img{ margin:8px 4px; float:left;}
+.try_drive_infor_btn select{ width:297px; color:#666; font-size:18px; border-radius:5px; margin:9px 0px; height:22px; background:url('../images/rights.png') no-repeat right center #fff; border:none;}
+.try_drive_infor_btn select option{ color:#666; font-size:18px;}
+
+.sub{ width:; height:; margin:26px 138px 15px;}
+.yuyue{ font-size:18px;color:#666; width:100%; text-align:center;}
+
+
+

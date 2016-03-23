@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+body{ width:480px; margin:0 auto; background:#fff;}
+
+.logo{ width:480px; height:68px;}
+.logo1{ float:left; width:75px; height:15px; margin:27px 0px 26px 15px;}
+.logo2{ float:right; width:170px; height:28px; margin:15px 16px 25px 0px;}
+
+section{ margin:15px 23px;}
+.sport_pic{ float:left; margin:0px 17px;}
+.sport_pic ul{}
+.sport_pic ul li{ float:left; width:125px; margin:0px 4px 22px; position:relative;}
+.sport_pic ul li a{ display:block;}
+.sport_pic ul li a img{ display:block; width:125px;}
+.vb{ position:absolute; right:0px; bottom:-15px; width:12px; height:10px; background: url('../images/search.png') 0 0 no-repeat;}
+
+
+.tabcont{ margin:0px 25px 22px; background: url('../images/tabs.png') no-repeat 0 0; width:384px; height:54px;overflow: hidden;}
+.tabcont .faudi,.fhy{ width:192px; float:left; height:54px;}
+.tabcont .faudi,.fhy{ float: left; height: 54px; width: 192px;}
+.tabcont.select{ background: url('../images/tabf.png') no-repeat 0 0;}
+.sportback{ width:100%;}
+
+.sport_sili{ width:100%; padding-bottom:10px; border-bottom:1px solid #e0e2e4; float:left; margin-bottom:10px;}
+.sport_sili h3{ height:60px; line-height:60px; font-size:20px; padding-left:34px; font-weight:bold; color:#333333; background: url('../images/soin.png') left center no-repeat;}
+.sport_sili h3 .spack_right{ float:right; margin:23px 0px 0px;}
+.sport_dl{ margin:0px 4px; display:none;}
+.sport_dl dt{ width:204px; float:left; margin-right:8px;}
+.sport_dl dt img{ width:204px; display:block;}
+.sport_dl dd{ font-size:16px; line-height:24px; color:#3e464b;}
+
+

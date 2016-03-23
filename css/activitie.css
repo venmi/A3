@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+body{ width:480px; margin:0 auto; background:#fff;}
+
+.logo{ width:480px; height:68px;}
+.logo1{ float:left; width:75px; height:15px; margin:27px 0px 26px 15px;}
+.logo2{ float:right; width:170px; height:28px; margin:15px 16px 25px 0px;}
+
+section{ margin:18px 40px;}
+.action{ float:left;}
+.action ul{}
+.action ul li{ float:left; width:125px; height:90px; margin:0px 4px 22px; position:relative;}
+.action ul li a{ display:block;}
+.action ul li a img{ display:block; width:125px; height:90px;}
+.vb{ position:absolute; right:0px; bottom:-15px; width:12px; height:10px; background: url('../images/search.png') 0 0 no-repeat;}
+
+
+.active_details{ float:left; width:100%; margin-top:10px;}
+.active_details h3{ width:100%; height:36px; font-size:21px; color:#df002b; line-height:34px; font-weight:bold;}
+.active_details p{ padding-left:20px; background: url('../images/coin.png') 4px center no-repeat; line-height:25px; color:#020202; font-size:16px;}
+.active_time{ float:left; width:100%; margin-top:10px;}
+.active_time h3{ width:100%; height:36px; font-size:21px; color:#df002b; line-height:36px; font-weight:bold;}
+.active_time h3 span{ line-height:36px; color:#020202; font-size:18px;}
+
+.active_place{ float:left; width:100%;}
+.active_place h3{ width:100%; height:36px; font-size:21px; color:#df002b; line-height:36px; font-weight:bold; position:relative;}
+.active_place h3 span{ line-height:34px; color:#020202; font-size:17px;}
+.active_place h3 ul{ position:absolute; right:0px; top:-14px;}
+.active_place h3 ul li{}
+.active_place h3 ul li a{ color:#3d9ed7; font-size:18px;}
+.active_place h3 ul li a img{ width:31px; height:38px;}
+
+.active_map{ margin:10px 7px 24px;height: 210px;width: 380px;}
+.active_map img{ width:100%;}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<title>预约试驾</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=yes">
+<meta charset="utf-8">
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/public.js"></script>
+<script src="js/activitie.js"></script>
+ <link rel="stylesheet" type="text/css" href="css/reset.css" />
+ <link rel="stylesheet" type="text/css" href="css/activitie.css" />
+ <script type="text/javascript">
+        window.onload=ShowMessage();
+        function ShowMessage(){
+            var phoneWidth =  parseInt(window.screen.width);
+            var phoneScale = phoneWidth/720;
+            var isAndroid = RegExp("Andr").test(navigator.userAgent);
+            if (isAndroid) {
+                document.write('<meta name="viewport" content="width=480, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+',   target-densitydpi=device-dpi">');
+            } else {
+                document.write('<meta name="viewport" content="width=480, user-scalable=no, target-densitydpi=device-dpi">');
+            }
+        }
+
+    </script>
+
+<!---->
+</head>
+
+<body>
+<div class="logo">
+    <img src="images/logo1.png" class="logo1"/>
+    <img src="images/logo2.png" class="logo2" />
+</div>
+
+<section>
+<div class="action" id="action">
+    <ul class="alblist">
+        <li class="alb-li"><a><img bigSrc="images/img1.png" src="images/img1.png"></a><span class="vb"></span></li>
+        <li class="alb-li"><a><img bigSrc="images/img2.png" src="images/img2.png"></a><span class="vb"></span></li>
+        <li class="alb-li"><a><img bigSrc="images/img1.png" src="images/img1.png"></a><span class="vb"></span></li>
+        <li class="alb-li"><a><img bigSrc="images/img2.png" src="images/img2.png"></a><span class="vb"></span></li>
+        <li class="alb-li"><a><img bigSrc="images/img1.png" src="images/img1.png"></a><span class="vb"></span></li>
+        <li class="alb-li"><a><img bigSrc="images/img2.png" src="images/img2.png"></a><span class="vb"></span></li>
+    </ul>        
+</div>
+<div class="active_details">
+    <h3> 活动详情: </h3>
+    <p> 活动期间，订购奥迪A3即可尊享缤纷大礼包； </p>
+    <p> 活动现场订车可享受惊喜价及多重限量版豪礼； </p>
+    <p> 活动现场更有惊喜特价车等您开回家; </p>
+    <p> 三款金融计划助你把车轻松“贷”回家！ </p>
+    <p> 预约到店试驾可享经销商准备的神秘大礼 </p>
+</div>
+<div class="active_time">
+    <h3> 活动时间: <span> 2015.02.09-2015.02.15 </span></h3>  
+</div>
+<div class="active_place">
+    <h3> 活动地点: <span> 北京颐提港购物中心 </span> <ul><li><a href="javascript:;"> 点击查看 <img src="images/addren.png" /> </a></li></ul></h3>
+    <div class="active_map">
+        <img src="images/img1.png" />    
+    </div>
+</div>
+</section>
+</body>
+</html>
+
+

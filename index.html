@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+<title>预约试驾</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=yes">
+<meta charset="utf-8">
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/public.js"></script>
+ <link rel="stylesheet" type="text/css" href="css/reset.css" />
+ <link rel="stylesheet" type="text/css" href="css/index6.css" />
+ <script type="text/javascript">
+        window.onload=ShowMessage();
+        function ShowMessage(){
+            var phoneWidth =  parseInt(window.screen.width);
+            var phoneScale = phoneWidth/720;
+            var isAndroid = RegExp("Andr").test(navigator.userAgent);
+            if (isAndroid) {
+                document.write('<meta name="viewport" content="width=480, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+',   target-densitydpi=device-dpi">');
+            } else {
+                document.write('<meta name="viewport" content="width=480, user-scalable=no, target-densitydpi=device-dpi">');
+            }
+        }
+
+    </script>
+
+<!---->
+</head>
+
+<body>
+	<section>
+        <div class="chrt">
+            <img src="images/chrt.png" />
+            <div class="appoint">
+                <input type="image" src="images/appoint.png" onclick="show_cover()" class="appoint_btn"/>
+            </div>
+        </div>	
+	</section>
+    <footer>
+        <div class="qieh">
+            <ul>
+                <li><a href="activitie.html"> <img src="images/coin1.png" /> 活动说明 </a></li>
+                <li style=" border-right:0px;"><a href="introduct.html"> <img src="images/coin2.png" /> 车型介绍 </a></li>
+            </ul>    
+        </div>
+    </footer>
+	<!-- 试乘试驾 -->
+	<div id="show_cover" class="try_drive hide">
+		<div id="" class="try_drive_bg"></div>
+		<div id="" class="try">
+			<div id="" class="drive">
+				<div id="" class="drive_head clear"> <h3> 试乘试驾 </h3> </div>
+				<div id="" class="cha"> <div class="ca"> <span class="close" onclick="closeBtn()"> <img src="images/close.png"/> </span> </div> </div>
+				<div id="" class="aod clear">
+					<dl>
+						<dt> <img src="images/car1.png"/> </dt>
+						<dd>
+							<p> 奥迪A3 Sportback </p>
+                            <span> <img id="option1" onclick="chexing('option1')" title="奥迪A3 Sportback" src="images/weix.png"/> </span>
+						</dd>
+					</dl>
+					<dl>
+						<dt> <img src="images/car2.png"/> </dt>
+						<dd>
+							<p> 奥迪A3 Limousine </p>
+							<span> <img id="option2" onclick="chexing('option2')" title="奥迪A3 Limousine" src="images/xuan.png"/> </span>
+						</dd>
+					</dl>
+				</div>
+				<!-- liebiao -->
+				<div id="" class="try_drive_infor clear">
+					<div id="" class="try_drive_infor_btn">
+						<label> 顾客姓名： </label>		
+						<input type="text" id="gust_name" class="try_input">
+					</div>
+					<div id="" class="try_drive_infor_btn">
+						<label> 称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谓： </label>		
+						<div id="" class="nan sex"> <img onclick="xuansex('sex1')" title="男士" id="sex1" src="images/xuan.png"/> 男士 </div>
+						<div id="" class="nv sex"> <img onclick="xuansex('sex2')" title="女士" id="sex2" src="images/weix.png"/> 女士 </div>
+					</div>
+					<div id="" class="try_drive_infor_btn">
+						<label> 手机号码： </label>		
+						<input type="text" id="tel" class="try_input">
+					</div>
+					<div class="try_drive_infor_btn">
+						<label> 经&nbsp;&nbsp;销&nbsp;&nbsp;商： </label>		
+						<select name="dealer">
+							<option value="">请选择</option>
+							<option value="11">任意一家</option>
+							<option value="162">北京博瑞祥云汽车销售服务有限公司</option>
+							<option value="163">北京中润发汽车销售有限公司</option>
+							<option value="164">北京亚之杰汽车贸易有限责任公司</option>
+							<option value="165">北京德奥达汽车销售有限公司</option>
+							<option value="166">北京联拓奥通汽车贸易有限责任公司</option>
+							<option value="167">北京运通博奥汽车销售服务有限公司</option>
+							<option value="168">北京百得利汽车贸易有限公司</option>
+							<option value="169">北京寰宇恒通汽车有限公司</option>
+							<option value="170">北京奥吉通汽车销售有限公司</option>
+							<option value="171">北京首汽腾迪汽车销售服务有限公司</option>
+							<option value="172">北京天润汽车贸易服务有限公司</option>
+							<option value="173">北京国服信奥兴汽车有限公司</option>
+							<option value="1740">北京名尊奥翔汽车销售有限公司</option>
+							<option value="2220">北京奥嘉世茂汽车销售服务有限公司</option>
+							<option value="2360">北京百得利奥迪双井CBD展厅</option>
+							<option value="2581">北京奥之旅汽车销售服务有限公司</option>
+							<option value="2860">北京国服信奥兴苏州桥奥迪展厅</option>
+							<option value="3120">北京华阳奥通汽车销售有限公司</option>
+							<option value="3148">北京东方华奥汽车销售服务有限公司</option>
+							<option value="3262">北京正德永成汽车贸易服务有限公司</option>
+							<option value="3462">北京安洋伟业汽车销售服务有限公司</option>
+							<option value="4160">北京兴奥晟通汽车销售服务有限公司</option>
+							<option value="4500">北京国服信奥众汽车有限公司</option>
+						</select>
+					</div>
+					<div class="try_drive_infor_btn">
+						<label> 购买计划： </label>		
+						<select name="buy_plan">
+							<option value="">请选择</option>
+							<option value="3个月内">3个月内</option>
+							<option value="4至6个月">4至6个月</option>
+							<option value="7个月到一年内">7个月到一年内</option>
+							<option value="一年以上">一年以上</option>
+							<option value="不确定">不确定</option>
+						</select>
+					</div>
+                    <div class="try_drive_infor_btn">
+						<label> 关注亮点： </label>		
+						<select>
+							<option value="">请选择</option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+						</select>
+					</div>
+                    <input type="image" onclick="christmas_2014insert()" src="images/sub.png" class="sub"/>
+				</div>
+				<!-- //liebiao -->
+			</div>
+		</div>
+	</div>
+    <div id="toast"></div>
+<script type="text/javascript">
+    //显示浮层
+    function show_cover(){
+        $("#show_cover").removeClass('hide');
+       //alert();
+    }
+    //关闭浮层
+    function closeBtn(){
+        $("#show_cover").addClass('hide');
+    }
+    
+    //车型
+    function chexing(obj){
+        if(obj=="option1"){
+            $("#"+obj).attr("src","images/xuan.png");
+            $("#option2").attr("src","images/weix.png");
+        }else{
+            $("#"+obj).attr("src","images/xuan.png");
+            $("#option1").attr("src","images/weix.png");
+        }
+    }
+    
+    //性别
+    function xuansex(obj){
+        if(obj=="sex1"){
+            $("#"+obj).attr("src","images/xuan.png");
+            $("#sex2").attr("src","images/weix.png");
+        }else{
+            $("#"+obj).attr("src","images/xuan.png");
+            $("#sex1").attr("src","images/weix.png");
+        }
+    }
+    
+    function christmas_2014insert(){
+        if($("#option1").attr('src')=="images/xuan.png"){
+            var chexing=$("#option1").attr('title');
+        }else{
+            var chexing=$("#option2").attr('title');
+        }
+        
+        if($("#sex1").attr('src')=="images/xuan.png"){
+            var sex=$("#sex1").attr('title');
+        }else{
+            var sex=$("#sex2").attr('title');
+        }
+        
+        var name=$("#gust_name").val();
+        if(name==""){
+            _toast._show("顾客姓名不能为空");
+            return false;
+        }
+        var tel=$("#tel").val();
+        if(tel==""){
+            _toast._show("手机号码不能为空");
+            return false;
+        }
+        if(tel && !(/^1[0-9]{10}$/.test(tel))){
+            _toast._show("手机号码不正确");
+            return false;
+        }
+        
+        var dealer=$("select[name=dealer] option:selected").text();
+        if(dealer=="请选择"){
+            _toast._show("请选择经销商");
+            return false;
+        }
+        var buy_plan=$("select[name=buy_plan] option:selected").text();
+        if(buy_plan=="请选择"){
+            _toast._show("请选择购买计划");
+            return false;
+        }
+        
+        $.post("/index5/insert",{chexing:chexing,name:name,sex:sex,tel:tel,dealer:dealer,buy_plan:buy_plan},function(data){
+            if(data){
+                if(data==1){
+                    alert('操作成功');
+                    closeBtn();
+                }else{
+                    alert('操作失败');
+                }
+            }
+        });
+    }
+</script>
+</body>
+</html>
+
+
